@@ -47,7 +47,7 @@ def get_secret(name: str, default: str = "") -> str:
         return default
 
 
-API_KEY = get_secret("AQ.Ab8RN6LHLTWiLjRqa7ZNy5JW0cEwtBcVKP5zhP0KWG_2qtmSkA")
+API_KEY = get_secret("GEMINI_API_KEY")
 MODEL_OVERRIDE = get_secret("GEMINI_MODEL")
 MODELS = [MODEL_OVERRIDE] + DEFAULT_MODELS if MODEL_OVERRIDE else DEFAULT_MODELS
 
@@ -55,9 +55,9 @@ MODELS = [MODEL_OVERRIDE] + DEFAULT_MODELS if MODEL_OVERRIDE else DEFAULT_MODELS
 # UI text in three languages
 # ---------------------------------------------------------------------------
 LANGS = {
+    "English": "English",
     "اردو": "Urdu",
     "سنڌي": "Sindhi",
-    "English": "English",
 }
 
 T = {
